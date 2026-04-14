@@ -1,16 +1,32 @@
-# liver_pal
+# LiverPal — Flutter Mobile Client
 
-A new Flutter project.
+A liver health companion app integrating LLM-powered diagnosis assistance
+and patient support. This is the Flutter mobile client.
 
-## Getting Started
+> Backend API: [liverpal-api](https://github.com/omarfaysal1111/liver_api)
 
-This project is a starting point for a Flutter application.
+## What It Does
 
-A few resources to get you started if this is your first Flutter project:
+- Guides patients through liver health self-assessment workflows
+- Connects to an LLM-powered backend for intelligent diagnosis assistance
+- Provides medication reminders, health tracking, and doctor communication
+- Built with a clean Flutter architecture for iOS and Android
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Tech Stack
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Mobile:** Flutter · Dart
+- **Native Integration:** C++ modules via Flutter Method Channels (for
+  performance-critical processing)
+- **Backend:** REST API integration with the LiverPal Python/FastAPI backend
+- **AI:** LLM integration for contextual health guidance
+
+## Note on C++ Module
+
+This repo contains a C++ native module used for performance-sensitive
+medical data processing, integrated into the Flutter app via Platform
+Channels. It is not a standalone C++ application.
+
+## Related
+
+- [liverpal-api](https://github.com/omarfaysal1111/liver_api) — Python
+  backend with LLM integration
